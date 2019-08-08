@@ -15,7 +15,8 @@ config :phoenix_one_four, PhoenixOneFourWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "IrNdm9qoRCtbNqv/YNMrsW7+gqh7d7hP+I6CdpW1O8VG2c3oifaGbXiKkag2P4BA",
   render_errors: [view: PhoenixOneFourWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: PhoenixOneFour.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: PhoenixOneFour.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [signing_salt: "Iebwg++09kuK9tNbrBgXOe+7xaXz9eWW"]
 
 # Configures Elixir's Logger
 config :logger, :console,
